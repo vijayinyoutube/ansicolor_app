@@ -16,7 +16,6 @@ class MyHomePage extends StatelessWidget {
       body: Center(
           child: PrimaryBtn(
         btnFun: () {
-          // ansiColorDisabled = false;
           debugPrint(error('✅ Success'));
         },
         btnText: 'Print Success',
