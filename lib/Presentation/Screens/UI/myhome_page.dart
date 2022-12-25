@@ -1,7 +1,8 @@
 import 'package:ansicolor/ansicolor.dart';
-import 'package:ansicolor_app/Presentation/Components/app_bar.dart';
-import 'package:ansicolor_app/Presentation/Components/primary_btn.dart';
-import 'package:ansicolor_app/Presentation/Functions/ansi_color.dart';
+
+import '../../Components/app_bar.dart';
+import '../../Components/primary_btn.dart';
+import '../../Functions/ansi_color.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -16,7 +17,8 @@ class MyHomePage extends StatelessWidget {
       body: Center(
           child: PrimaryBtn(
         btnFun: () {
-          debugPrint(error('✅ Success'));
+          ansiColorDisabled = false;
+          debugPrint(success('✅ Success'));
         },
         btnText: 'Print Success',
       )),
